@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>edu.lu.uni.serval</groupId>
-	<artifactId>GitTraveller</artifactId>
+	<artifactId>GitTraverse</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>GitTraveller</name>
+	<name>GitTraverse</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -15,6 +15,12 @@
 	</properties>
 
 	<dependencies>
+		
+		<dependency>
+			<groupId>edu.lu.uni</groupId>
+			<artifactId>simple-utils</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
@@ -28,12 +34,6 @@
 		    <groupId>org.jsoup</groupId>
 		    <artifactId>jsoup</artifactId>
 		    <version>1.11.2</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>edu.lu.uni</groupId>
-			<artifactId>simple-utils</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		
 		<!-- jgit -->

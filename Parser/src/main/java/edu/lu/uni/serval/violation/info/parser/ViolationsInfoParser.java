@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import edu.lu.uni.serval.config.Configuration;
 import edu.lu.uni.serval.git.exception.GitRepositoryNotFoundException;
 import edu.lu.uni.serval.git.exception.NotValidGitRepositoryException;
-import edu.lu.uni.serval.git.travel.GitRepository;
+import edu.lu.uni.serval.git.traverse.GitRepository;
 import edu.lu.uni.serval.utils.Exporter;
 import edu.lu.uni.serval.utils.FileHelper;
 import edu.lu.uni.serval.utils.MapSorter;

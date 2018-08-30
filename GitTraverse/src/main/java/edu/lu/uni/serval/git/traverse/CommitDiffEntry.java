@@ -1,4 +1,4 @@
-package edu.lu.uni.serval.git.travel;
+package edu.lu.uni.serval.git.traverse;
 
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.revwalk.RevCommit;

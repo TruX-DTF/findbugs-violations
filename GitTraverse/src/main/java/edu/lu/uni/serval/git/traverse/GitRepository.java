@@ -1,4 +1,4 @@
-package edu.lu.uni.serval.git.travel;
+package edu.lu.uni.serval.git.traverse;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

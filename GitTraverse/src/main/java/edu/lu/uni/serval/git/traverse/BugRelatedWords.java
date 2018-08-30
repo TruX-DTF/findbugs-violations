@@ -1,4 +1,4 @@
-package edu.lu.uni.serval.git.travel;
+package edu.lu.uni.serval.git.traverse;
 
 import java.util.ArrayList;
 import java.util.Arrays;

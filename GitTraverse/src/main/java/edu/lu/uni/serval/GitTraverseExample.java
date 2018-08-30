@@ -13,12 +13,12 @@ import org.eclipse.jgit.revwalk.RevCommit;
 
 import edu.lu.uni.serval.git.exception.GitRepositoryNotFoundException;
 import edu.lu.uni.serval.git.exception.NotValidGitRepositoryException;
-import edu.lu.uni.serval.git.travel.CommitDiffEntry;
-import edu.lu.uni.serval.git.travel.GitRepository;
-import edu.lu.uni.serval.git.travel.MyDiffEntry;
+import edu.lu.uni.serval.git.traverse.CommitDiffEntry;
+import edu.lu.uni.serval.git.traverse.GitRepository;
+import edu.lu.uni.serval.git.traverse.MyDiffEntry;
 import edu.lu.uni.serval.utils.FileHelper;
 
-public class GitTravllerExample {
+public class GitTraverseExample {
 	
 	private static final String DATASET_FILE_PATH = "OUTPUT/";
 	private static final String REVISION_FILE_PATH = "/revisionFiles/";

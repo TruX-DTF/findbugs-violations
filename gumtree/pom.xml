@@ -29,10 +29,10 @@
         <!-- <module>gen.js</module>
         <module>gen.ruby</module>
         <module>gen.sax</module>
-        <module>gen.c</module> -->
+        <module>gen.c</module>
         <module>client</module>
         <module>client.diff</module>
-        <!-- <module>gumtree-all</module> -->
+        <module>gumtree-all</module> -->
     </modules>
 
     <dependencies>
