@@ -1,22 +1,6 @@
-
+InputPath=../JavaProjects
 ProjectName=ant
-java -Xmx2g -jar ../../../../findbugs-3.0.1/lib/findbugs.jar -textui -low -xml -outputFile FindBugs/${ProjectName}.xml projects/$ProjectName/
+FindBugsPath=../../../../findbugs-3.0.1/lib/findbugs.jar
+OutputPath=../FindBugsResults
 
-
-
-
-ProjectName=Activiti-Activiti
-java -Xmx2g -jar ../../../../findbugs-3.0.1/lib/findbugs.jar -textui -low -xml -outputFile ${ProjectName}.xml $ProjectName/
-
-
-
-ProjectName=simon-eastwood-DependencyCheckCM
-ProjectPath=/Volumes/MacBook/repos/repos-i
-java -Xmx2g -jar ../../../../findbugs-3.0.1/lib/findbugs.jar -textui -low -xml -outputFile ${ProjectName}.xml $ProjectPath/$ProjectName/
-
-
-	
-	
-	ProjectName=examples
-	ProjectPath=/Volumes/MacBook/repos/repos-r/datasalt-pangool
-	java -Xmx2g -jar ../../../../findbugs-3.0.1/lib/findbugs.jar -textui -low -xml -outputFile ${ProjectName}.xml $ProjectPath/$ProjectName/
+java -Xmx2g -jar ${FindBugsPath} -textui -low -xml -outputFile ${OutputPath}/${ProjectName}.xml ${InputPath}/${ProjectName}/
