@@ -1,6 +1,0 @@
-InputPath=../JavaProjects
-ProjectName=ant
-FindBugsPath=../../../../findbugs-3.0.1/lib/findbugs.jar
-OutputPath=../FindBugsResults
-
-java -Xmx2g -jar ${FindBugsPath} -textui -low -xml -outputFile ${OutputPath}/${ProjectName}.xml ${InputPath}/${ProjectName}/
