@@ -1,0 +1,24 @@
+PATCH###
+Alarm Type :NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE
+
+-   …exp1.method()…
++   T v = exp1.method();
++   if (v == null) { return null; }
++   …v…
+
+AST Diff###:
+UPD Statement
+---DEL Expression
+---INS Variable
+INS VariableDeclarationStatement
+---INS SimpleType
+---INS VariableDeclarationFragment
+------INS Variable
+------INS Expression
+INS IfStatement
+---INS InfixExpression
+------INS Variable
+------INS Operator@==
+------INS NullLiteral
+---INS ReturnStatement
+------INS NullLiteral

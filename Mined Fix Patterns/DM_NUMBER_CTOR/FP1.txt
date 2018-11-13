@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :DM_NUMBER_CTOR
+
+-  new PrimitiveType(exp)
++  PrimitiveType.valueOf(exp)
+
+AST Diff###:
+---------DEL ClassInstanceCreation
+------------DEL New
+------------DEL SimpleType
+------------DEL Variable
+---------INS MethodInvocation
+------------INS Name
+------------INS MethodName
+---------------INS Expression

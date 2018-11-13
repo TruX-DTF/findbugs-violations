@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :RC_REF_COMPARISON
+
+- exp1 == exp2
++ exp1.equals(exp2);
+
+AST Diff###:
+---DEL InfixExpression
+------DEL Expression
+------DEL Operator
+------DEL Expression
+---INS MethodInvocation
+------INS Expression
+------INS MethodName
+---------INS Expression

@@ -1,0 +1,27 @@
+PATCH###
+Alarm Type :BC_UNCONFIRMED_CAST_OF_RETURN_VALUE
+
+-  (T) v.method();
++  if (v.method() != null && v.method() instanceof T) {
++	(T) v.method();
++  }
+
+AST Diff###:
+INS IfStatement
+---MOV Statement
+---INS InfixExpression
+------INS InfixExpression
+---------INS MethodInvocation
+------------INS Variable
+------------INS MethodName
+---------INS Operator
+---------INS NullLiteral
+------INS Operator
+------INS InstanceofExpression
+---------INS MethodInvocation
+------------INS Variable
+------------INS MethodName
+---------INS Instanceof
+---------INS SimpleType
+---INS Statement
+

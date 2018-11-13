@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :UC_USELESS_CONDITION
+
+
+-            if (exp1 && exp2) {
++            if (exp2) {
+                 
+AST Diff###:
+UPD IfStatement
+---DEL InfixExpression
+------DEL Expression
+------DEL Operator
+---MOV Expression

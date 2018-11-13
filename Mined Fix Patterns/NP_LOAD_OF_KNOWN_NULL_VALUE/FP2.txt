@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :NP_LOAD_OF_KNOWN_NULL_VALUE
+
+
+-   if (positive != / == null) {
++   if (positive == / != null) {
+
+AST Diff###:
+UPD IfStatement
+---UPD InfixExpression
+------UPD Operator

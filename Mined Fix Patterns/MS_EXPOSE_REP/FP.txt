@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :MS_EXPOSE_REP
+
+
+-            return FTFT;
++            return FTFT.clone();
+
+AST Diff###:
+UPD ReturnStatement
+---DEL Variable
+---INS MethodInvocation
+------INS Name
+------INS MethodName

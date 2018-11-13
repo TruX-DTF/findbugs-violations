@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS
+-            T v=(T)v;
+
+AST Diff###:
+DEL VariableDeclarationStatement
+---DEL SimpleType
+---DEL VariableDeclarationFragment
+------DEL Variable
+------DEL CastExpression
+---------DEL SimpleType
+---------DEL Variable
+
+
+

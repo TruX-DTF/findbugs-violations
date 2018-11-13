@@ -1,0 +1,8 @@
+PATCH###
+Alarm Type :JLM_JSR166_UTILCONCURRENT_MONITORENTER
+
+-        synchronized (exp) {
+
+AST Diff###:
+DEL SynchronizedStatement
+---DEL Expression

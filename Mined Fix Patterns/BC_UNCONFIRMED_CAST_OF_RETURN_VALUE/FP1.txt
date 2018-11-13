@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :BC_UNCONFIRMED_CAST_OF_RETURN_VALUE
+
+-  (T) v.method();
+
+AST Diff###:
+DEL Statement
+------DEL CastExpression
+---------DEL SimpleType
+---------DEL MethodInvocation
+------------DEL Variable
+------------DEL MethodName
+
+
+

@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :UPM_UNCALLED_PRIVATE_METHOD
+
+
+- private T methodName(…) {
+- 	…
+- }
+
+AST Diff###:
+DEL MethodDeclaration

@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :UCF_USELESS_CONTROL_FLOW
+
+
+-        if (exp) {
+-           …
+-        }
+
+AST Diff###:
+DEL IfStatement
+---DEL Expression

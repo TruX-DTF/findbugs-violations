@@ -1,0 +1,8 @@
+PATCH###
+Alarm Type : RE_BAD_SYNTAX_FOR_REGULAR_EXPRESSION
+
+- “*”  or \\, +, -
++ “\\*”
+
+AST Diff###:
+---UPD StringLiteral

@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :INT_VACUOUS_COMPARISON
+
+-        if (var > Integer.MAX_VALUE)
+
+AST Diff###:
+DEL IfStatement
+---DEL InfixExpression
+------DEL Variable
+------DEL Operator
+------DEL QualifiedName

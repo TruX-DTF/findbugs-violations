@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE
+
+-   if(exp) {
++   if(var != null && exp) {
+ 			
+AST Diff###:
+UPD IfStatement
+---INS InfixExpression
+------INS InfixExpression
+---------INS Variable
+---------INS Operator
+---------INS NullLiteral
+------INS Operator
+------MOV Expression

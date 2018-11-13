@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT
+
+- ClassName.var.method();
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL MethodInvocation
+------DEL QualifiedName
+------DEL MethodName

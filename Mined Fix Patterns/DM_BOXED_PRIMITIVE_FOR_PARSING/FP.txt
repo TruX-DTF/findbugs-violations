@@ -1,0 +1,9 @@
+PATCH###
+Alarm Type :DM_BOXED_PRIMITIVE_FOR_PARSING
+
+- PrimitiveType.valueOf(exp);
++ PrimitiveType.parseInt(exp);
+
+AST Diff###:
+---UPD MethodInvocation
+------UPD MethodName

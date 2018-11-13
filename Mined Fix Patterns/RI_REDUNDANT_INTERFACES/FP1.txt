@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :RI_REDUNDANT_INTERFACES
+
+
+-public class ClassName implements InterfaceName {
++public class ClassName {
+
+AST Diff###:
+UPD TypeDeclaration
+---DEL SimpleType

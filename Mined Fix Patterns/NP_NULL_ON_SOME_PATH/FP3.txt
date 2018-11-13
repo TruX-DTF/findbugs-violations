@@ -1,0 +1,16 @@
+PATCH###
+Alarm Type :NP_NULL_ON_SOME_PATH
+
++   if (var == null) {
++       throw new IllegalArgumentException(…);
++   }
+    Statement.
+
+AST Diff###:
+INS IfStatement
+---INS InfixExpression
+------INS NullLiteral
+------INS Operator
+------INS Variable
+---INS ThrowStatement
+------INS ClassInstanceCreationExpression

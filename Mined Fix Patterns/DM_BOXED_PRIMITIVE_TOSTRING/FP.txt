@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :DM_BOXED_PRIMITIVE_TOSTRING
+
+- new PrimitiveType(exp).toString());
++ PrimitiveType.toString(exp));
+
+AST Diff###:
+------------DEL ClassInstanceCreation
+---------------DEL New
+---------------DEL SimpleType
+---------------DEL Variable
+------------UPD MethodName
+---------------INS Variable
+---------------MOV Expression

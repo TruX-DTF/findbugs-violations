@@ -1,0 +1,17 @@
+PATCH###
+Alarm Type :EQ_GETCLASS_AND_CLASS_CONSTANT
+
+
+-  o.getClass() ==/!= ClassName.class
++  o.getClass() ==/!= this.getClass()
+
+AST Diff###:
+------UPD InfixExpression
+---------DEL TypeLiteral
+---------INS MethodInvocation
+------------INS ThisExpression
+------------INS MethodName
+
+
+
+

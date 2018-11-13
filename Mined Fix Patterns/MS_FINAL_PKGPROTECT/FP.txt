@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :MS_FINAL_PKGPROTECT
+
+
+-    public static T var = exp;
++    public static final T var = exp;
+
+AST Diff###:
+UPD FieldDeclaration
+---INS Modifier

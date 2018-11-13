@@ -1,0 +1,17 @@
+PATCH###
+Alarm Type :RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN
+
+-   exp == Boolean.TRUE/FALSE
++   Boolean.TRUE/FALSE.equals(exp)
+
+AST Diff###:
+---DEL InfixExpression
+------DEL Expression
+------DEL Operator
+------DEL QualifiedName
+---------DEL Variable
+---------DEL Variable
+---INS MethodInvocation
+------INS QualifiedName
+------INS MethodName
+---------INS Expression

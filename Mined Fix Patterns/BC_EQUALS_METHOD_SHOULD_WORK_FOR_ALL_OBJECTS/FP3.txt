@@ -1,0 +1,20 @@
+PATCH###
+Alarm Type :BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS
+
+
++  if (! (o instanceof T)) return false;
+
+AST Diff###:
+INS IfStatement
+---INS PrefixExpression
+------INS Operator
+------INS ParenthesizedExpression
+---------INS InstanceofExpression
+------------INS Variable
+------------INS Instanceof
+------------INS SimpleType
+---INS ReturnStatement
+------MOV BooleanLiteral
+
+
+

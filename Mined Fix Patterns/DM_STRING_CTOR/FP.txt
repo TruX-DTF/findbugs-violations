@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :DM_STRING_CTOR
+
+- new String(exp)
++ exp
+
+AST Diff###:
+------DEL ClassInstanceCreation
+---------DEL New
+---------DEL SimpleType
+------MOV Expression

@@ -1,0 +1,15 @@
+
+PATCH###
+Alarm Type :BC_IMPOSSIBLE_CAST
+
+-  (T1)x;
++  (T2)x;
+
+AST Diff###:
+---UPD CastExpression
+------UPD SimpleType
+
+
+
+
+

@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION
+
+-   collectionVar.removeAll(collectionVar);
++   collectionVar.clear();
+
+AST Diff###:
+UPD ExpressionStatement
+---UPD MethodInvocation
+------UPD MethodName
+---------DEL Variable

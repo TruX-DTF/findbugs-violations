@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :EC_UNRELATED_TYPES
+
+
+-                if (exp1.equals(exp2)){
++                if (exp1 == exp2) {
+AST Diff###:
+UPD IfStatement
+---DEL MethodInvocation
+------DEL MethodInvocation
+---INS InfixExpression
+------INS Expression1
+------INS Operator
+------INS Expression2

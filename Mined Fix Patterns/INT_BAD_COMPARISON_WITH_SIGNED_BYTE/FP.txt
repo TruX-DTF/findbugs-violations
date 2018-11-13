@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :INT_BAD_COMPARISON_WITH_SIGNED_BYTE
+
+- byteVar > 127
++ byteVar < 0
+
+AST Diff###:
+---UPD InfixExpression
+------UPD Operator
+------UPD NumberLiteral

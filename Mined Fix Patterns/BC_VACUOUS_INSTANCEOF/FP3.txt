@@ -1,0 +1,21 @@
+PATCH###
+Alarm Type :BC_VACUOUS_INSTANCEOF
+
+- if( v instanceof T && exp ) {
++ if (exp) {
+           
+AST Diff###:
+UPD IfStatement
+---DEL InfixExpression
+------DEL InstanceofExpression
+---------DEL Variable
+---------DEL Instanceof
+---------DEL SimpleType
+------DEL Operator
+---MOV Expression
+
+
+
+
+
+

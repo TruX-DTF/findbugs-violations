@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE
+
+-      if (var != null && exp) {
++      if (exp) {
+
+AST Diff###:
+UPD IfStatement
+---DEL InfixExpression
+------DEL InfixExpression
+---------DEL Variable
+---------DEL Operator
+---------DEL NullLiteral
+------DEL Operator
+---MOV InfixExpression

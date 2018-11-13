@@ -1,0 +1,9 @@
+PATCH###
+Alarm Type :NP_ALWAYS_NULL
+
+- var !=/== null
++ var ==/!= null
+
+AST Diff###:
+------UPD InfixExpression
+---------UPD Operator

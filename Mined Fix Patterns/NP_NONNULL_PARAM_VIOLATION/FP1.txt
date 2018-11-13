@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :NP_NONNULL_PARAM_VIOLATION
+
+
+-   method(null);
++   method();
+
+AST Diff###:
+---UPD MethodInvocation
+------DEL MethodName
+---------DEL NullLiteral

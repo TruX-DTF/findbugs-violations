@@ -1,0 +1,16 @@
+PATCH###
+Alarm Type :BC_UNCONFIRMED_CAST
+
++  if (exp instanceof T) {
+      T v = (T) exp;
++  }
+AST Diff###:
+INS IfStatement
+---INS InstanceofExpression
+------INS Variable
+------INS Instanceof
+------INS SimpleType
+
+
+
+

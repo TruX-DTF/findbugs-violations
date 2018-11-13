@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :DM_EXIT
+
+
+-  System.exit(NumberLiteral);
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL MethodInvocation
+------DEL Name
+------DEL MethodName
+---------DEL NumberLiteral

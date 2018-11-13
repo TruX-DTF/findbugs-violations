@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :NP_LOAD_OF_KNOWN_NULL_VALUE
+
+
+- filters == null
+
+AST Diff###:
+---------DEL InfixExpression
+------------DEL Variable
+------------DEL Operator
+------------DEL NullLiteral

@@ -1,0 +1,16 @@
+PATCH###
+Alarm Type :DM_INVALID_MIN_MAX
+
+
+-   Math.max(Math.min(exp1, numberLiteral), exp2);
++   Math.min(Math.max(exp1, numberLiteral), exp2);
+
+AST Diff###:
+------UPD MethodInvocation
+---------UPD MethodName
+------------UPD MethodInvocation
+---------------UPD MethodName
+
+
+
+

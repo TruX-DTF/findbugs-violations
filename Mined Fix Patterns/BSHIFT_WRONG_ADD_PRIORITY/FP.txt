@@ -1,0 +1,18 @@
+PATCH###
+Alarm Type :BSHIFT_WRONG_ADD_PRIORITY
+
+
+-  exp << 8 + exp2;
++  (exp << 8) + exp2;
+
+AST Diff###:
+------------INS ParenthesizedExpression
+---------------MOV InfixExpression
+------------------MOV Expression
+------------------MOV Operator
+------------------MOV NumberLiteral
+
+
+
+
+

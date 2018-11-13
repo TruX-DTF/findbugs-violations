@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :REC_CATCH_EXCEPTION
+
+-        } catch (Exception e) {
++        } catch (SpecificException1 | SpecificException2 e) {
+            
+
+AST Diff###:
+UPD CatchClause
+---UPD SingleVariableDeclaration
+------DEL SimpleType
+------INS UnionType
+---------INS SimpleType
+---------INS SimpleType

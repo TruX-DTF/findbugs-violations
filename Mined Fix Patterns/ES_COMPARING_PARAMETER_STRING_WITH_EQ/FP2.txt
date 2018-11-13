@@ -1,0 +1,17 @@
+PATCH###
+Alarm Type :ES_COMPARING_PARAMETER_STRING_WITH_EQ
+
+- s != ""
++ !s.isEmpty()
+
+AST Diff###:
+---DEL InfixExpression
+------DEL Variable
+------DEL Operator
+------DEL StringLiteral
+---INS PrefixExpression
+------INS Operator
+------INS MethodInvocation
+---------INS Variable
+---------INS MethodName
+

@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :DM_CONVERT_CASE
+
+- strExp.toLowerCase(),
++ strExp.toLowerCase(Locale.ENGLISH),
+
+AST Diff###:
+---------UPD MethodInvocation
+------------UPD MethodName
+---------------INS QualifiedName
+------------------INS Variable
+------------------INS Variable

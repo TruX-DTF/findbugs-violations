@@ -1,0 +1,34 @@
+
+PATCH###
+Alarm Type :CN_IDIOM_NO_SUPER_CALL
+
+-    return new T(this);
++    try {
++      return (T) super.clone();
++    } catch (CloneNotSupportedException cnse) {
++      throw new RuntimeException("Cloneable interface removed from SoyJsSrcOptions.");
++    }
+
+AST Diff###:
+INS TryStatement
+---INS Block
+------INS ReturnStatement
+---------INS CastExpression
+------------INS SimpleType
+------------INS SuperMethodInvocation
+---------------INS MethodName
+---INS CatchClause
+------INS SingleVariableDeclaration
+---------INS SimpleType
+---------INS Variable
+------INS ThrowStatement
+---------INS ClassInstanceCreation
+------------INS StringLiteral
+------------MOV New
+------------MOV SimpleType
+DEL ReturnStatement
+---DEL ClassInstanceCreation
+
+
+
+

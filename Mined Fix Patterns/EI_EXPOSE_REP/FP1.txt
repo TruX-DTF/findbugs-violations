@@ -1,0 +1,8 @@
+PATCH###
+Alarm Type :EI_EXPOSE_REP
+
+-    return v;
+
+AST Diff###:
+DEL ReturnStatement
+---DEL Variable

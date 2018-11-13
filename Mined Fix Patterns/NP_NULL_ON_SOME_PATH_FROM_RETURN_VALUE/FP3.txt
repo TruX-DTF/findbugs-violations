@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE
+
+
+-    exp1.method()
++    exp2.method()
+
+AST Diff###:
+---UPD MethodInvocation
+------UPD Expression

@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :SC_START_IN_CTOR
+
+-    new Thread(this).start();
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL MethodInvocation
+------DEL ClassInstanceCreation
+---------DEL New
+---------DEL SimpleType
+---------DEL ThisExpression
+------DEL MethodName

@@ -1,0 +1,18 @@
+PATCH###
+Alarm Type :BX_BOXING_IMMEDIATELY_UNBOXED_TO_PERFORM_COERCION
+
+-  new Double(exp).intValue();
++  exp.intValue();
+
+AST Diff###:
+---UPD MethodInvocation
+------INS MethodInvocation
+------DEL ClassInstanceCreation
+---------DEL New
+---------DEL SimpleType
+---------DEL MethodInvocation
+
+
+
+
+

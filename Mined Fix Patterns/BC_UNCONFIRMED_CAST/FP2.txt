@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :BC_UNCONFIRMED_CAST
+
+- (T) v
++ v
+
+AST Diff###:
+---------DEL CastExpression
+------------DEL SimpleType
+------------DEL Variable
+---------INS Variable
+
+

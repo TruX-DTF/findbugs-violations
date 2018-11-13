@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :IM_BAD_CHECK_FOR_ODD
+
+
+-  numExp % 2 == 1;
++  numExp % 2 != 0;
+
+AST Diff###:
+---UPD InfixExpression
+------UPD Operator
+------UPD NumberLiteral

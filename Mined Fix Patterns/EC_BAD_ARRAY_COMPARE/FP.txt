@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :EC_BAD_ARRAY_COMPARE
+
+-  arrayExp1.equals(arrayExp2)
++  Arrays.equals(arrayExp1, arrayExp2)
+
+AST Diff###:
+------UPD MethodInvocation
+---------UPD Variable
+---------UPD MethodName
+------------INS Expression
+
+

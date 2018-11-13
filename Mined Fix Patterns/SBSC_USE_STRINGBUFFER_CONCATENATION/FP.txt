@@ -1,0 +1,29 @@
+PATCH###
+Alarm Type :SBSC_USE_STRINGBUFFER_CONCATENATION
+
+-  String v = exp;
++  StringBuilder v = new StringBuilder(exp);
+   ……
+-  v += exp;
++  v.append(exp);
+
+AST Diff###:
+UPD ExpressionStatement
+---UPD SimpleType
+---DEL Expression
+---INS ClassInstanceCreation
+------INS New
+------INS SimpleType
+---------INS Expression
+UPD ExpressionStatement
+---INS MethodInvocation
+------INS Variable
+------INS MethodName
+---------INS MethodInvocation
+------------INS Name
+------------INS MethodName
+---------------INS Variable
+---DEL Assignment
+------DEL Variable
+------DEL Operator
+------DEL Variable

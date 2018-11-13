@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :DE_MIGHT_IGNORE
+
+-  } catch (Exception e) {
++  } catch (RuntimeException e) {
+
+AST Diff###:
+UPD CatchClause
+---UPD SingleVariableDeclaration
+------UPD SimpleType ### specific exception type.
+
+

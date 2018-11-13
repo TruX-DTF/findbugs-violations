@@ -1,0 +1,8 @@
+PATCH###
+Alarm Type :NP_ALWAYS_NULL
+
+-        throw null;
+
+AST Diff###:
+DEL ThrowStatement
+---DEL NullLiteral

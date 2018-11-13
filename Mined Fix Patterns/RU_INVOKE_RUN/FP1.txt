@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :RU_INVOKE_RUN
+
+-    new Thread(…).run();
++    new Thread(…).start();
+
+AST Diff###:
+UPD ExpressionStatement
+---UPD MethodInvocation
+------UPD MethodName

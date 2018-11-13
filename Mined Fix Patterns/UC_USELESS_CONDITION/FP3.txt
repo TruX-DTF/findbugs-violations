@@ -1,0 +1,8 @@
+PATCH###
+Alarm Type :UC_USELESS_CONDITION
+
+-        if (exp) {
+
+AST Diff###:
+DEL IfStatement
+---DEL Expression

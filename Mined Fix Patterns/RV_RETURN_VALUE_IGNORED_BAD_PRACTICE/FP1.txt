@@ -1,0 +1,16 @@
+PATCH###
+Alarm Type :RV_RETURN_VALUE_IGNORED_BAD_PRACTICE
+
+-   var.method();
++   boolean r_ = var.method();
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL MethodInvocation
+INS VariableDeclarationStatement
+---INS PrimitiveType
+---INS VariableDeclarationFragment
+------INS Variable
+------INS MethodInvocation
+---------MOV Variable
+---------MOV MethodName

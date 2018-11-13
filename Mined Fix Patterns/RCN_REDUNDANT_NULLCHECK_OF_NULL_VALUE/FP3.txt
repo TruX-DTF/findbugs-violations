@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE
+
+
+-   assert var != null;
+
+AST Diff###:
+DEL AssertStatement
+---DEL InfixExpression
+------DEL Variable
+------DEL Operator
+------DEL NullLiteral

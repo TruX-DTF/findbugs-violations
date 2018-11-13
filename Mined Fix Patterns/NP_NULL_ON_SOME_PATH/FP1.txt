@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :NP_NULL_ON_SOME_PATH
+
++   if (var != null) {
+        Statements…
++   }
+
+AST Diff###:
+INS IfStatement
+---MOV Statements
+---INS InfixExpression
+------INS NullLiteral
+------INS Operator
+------INS Variable

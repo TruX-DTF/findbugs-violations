@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :DM_DEFAULT_ENCODING
+
+-  new Input/OutputStreamType1(exp)
++  new Input/OutputStreamType2(new Input/OutputStreamType3(exp), CharsetExp)
+
+AST Diff###:
+------UPD ClassInstanceCreation
+---------UPD ClassInstanceCreation
+------------UPD SimpleType
+---------INS ClassInstanceCreation
+------------MOV ClassInstanceCreation
+------------INS New
+------------INS SimpleType
+------------INS Expression@CharsetExp

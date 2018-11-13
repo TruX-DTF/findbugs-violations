@@ -1,0 +1,23 @@
+PATCH###
+Alarm Type :BC_VACUOUS_INSTANCEOF
+
+- v instanceof T1
++ v instanceof T2
+
+AST Diff###:
+---UPD InstanceofExpression
+------UPD SimpleType
+
+
+
+PATCH###
+Alarm Type :BC_VACUOUS_INSTANCEOF
+
+-  a instanceof T
++  b instanceof T
+    
+AST Diff###:
+---UPD InstanceofExpression
+------UPD Variable
+
+

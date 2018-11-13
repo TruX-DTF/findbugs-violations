@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :SA_FIELD_SELF_ASSIGNMENT
+
+-   this.var1 = var1;
++   this.var1 = var2;
+
+AST Diff###:
+UPD ExpressionStatement
+---UPD Assignment
+------UPD Variable

@@ -1,0 +1,17 @@
+PATCH###
+Alarm Type :EI_EXPOSE_REP
+
+- return v;
++ return (v == null) ? null : exp;
+
+AST Diff###:
+UPD ReturnStatement
+---INS ConditionalExpression
+------INS ParenthesizedExpression
+---------INS InfixExpression
+------------INS Variable
+------------INS Operator
+------------INS NullLiteral
+------INS NullLiteral
+------INS Expression
+---DEL Variable

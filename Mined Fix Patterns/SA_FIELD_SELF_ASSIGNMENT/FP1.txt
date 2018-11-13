@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :SA_FIELD_SELF_ASSIGNMENT
+
+-    this.var = var;
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL Assignment
+------DEL FieldAccess
+---------DEL ThisExpression
+---------DEL Variable
+------DEL Operator
+------DEL Variable

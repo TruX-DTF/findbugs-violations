@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :SA_LOCAL_SELF_COMPARISON
+
+@@ -177, 179 +175, 178@@
+-    var !=/== var
++    var !=/== var1
+
+AST Diff###:
+---UPD InfixExpression
+------UPD Variable
+

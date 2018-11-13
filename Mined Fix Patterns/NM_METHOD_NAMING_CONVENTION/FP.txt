@@ -1,0 +1,9 @@
+PATCH###
+Alarm Type :NM_METHOD_NAMING_CONVENTION
+
+-  public T MethodName() {
++  public T methodName() {
+
+AST Diff###:
+UPD MethodDeclaration
+---UPD MethodName

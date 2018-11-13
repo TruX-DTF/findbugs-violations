@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :DMI_COLLECTION_OF_URLS
+
+- url
++ url.toString()
+
+AST Diff###:
+------------DEL Variable
+------------INS MethodInvocation
+---------------INS Variable
+---------------INS MethodName

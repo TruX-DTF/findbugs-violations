@@ -1,0 +1,17 @@
+PATCH###
+Alarm Type :SA_LOCAL_DOUBLE_ASSIGNMENT
+
+-  T v = v = new T(args);
++  T v = new T(args);
+
+AST Diff###:
+UPD VariableDeclarationStatement
+---UPD VariableDeclarationFragment
+------DEL Assignment
+---------DEL Variable
+---------DEL Operator
+---------DEL ClassInstanceCreation
+------INS ClassInstanceCreation
+---------MOV New
+---------MOV SimpleType
+---------MOV Variable

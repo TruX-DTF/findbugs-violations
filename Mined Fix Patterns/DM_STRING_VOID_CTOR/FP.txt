@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :DM_STRING_VOID_CTOR
+
+-   new String()
++   ""
+
+AST Diff###:
+------INS StringLiteral
+------DEL ClassInstanceCreation
+---------DEL New
+---------DEL SimpleType

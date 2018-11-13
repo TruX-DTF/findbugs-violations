@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :BX_UNBOXING_IMMEDIATELY_REBOXED
+
+-  ((Number) v).numTypeValue()
++  NumType.valueOf(((Number) v).numTypeValue())
+
+* numType, NumType —> primitive types
+
+AST Diff###:
+------INS MethodInvocation
+---------INS Name
+---------INS MethodName
+------------MOV MethodInvocation

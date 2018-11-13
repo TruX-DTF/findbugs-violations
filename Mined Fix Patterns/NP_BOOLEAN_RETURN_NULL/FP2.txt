@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :NP_BOOLEAN_RETURN_NULL
+
+-        return null;
++        return false;
+
+AST Diff###:
+UPD ReturnStatement
+---INS BooleanLiteral
+---DEL NullLiteral

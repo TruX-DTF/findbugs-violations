@@ -1,0 +1,18 @@
+PATCH###
+Alarm Type :BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS
+
+-   return exp1().equals(((T)obj).exp2());
++   return obj instanceof T && exp1().equals(((T)obj).exp2());
+
+AST Diff###:
+UPD ReturnStatement
+---INS InfixExpression
+------MOV MethodInvocation
+------INS InstanceofExpression
+---------INS Variable
+---------INS Instanceof
+---------INS SimpleType
+------INS Operator
+
+
+

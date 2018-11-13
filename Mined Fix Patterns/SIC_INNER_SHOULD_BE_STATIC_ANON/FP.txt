@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :SIC_INNER_SHOULD_BE_STATIC_ANON
+
+-    return new ClassName(var, args) {
++    return new ClassName(args) {
+
+AST Diff###:
+UPD ReturnStatement
+---UPD MethodInvocation
+------UPD ClassInstanceCreation
+---------DEL Variable

@@ -1,0 +1,16 @@
+PATCH###
+Alarm Type :NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE
+
+
+-  exp.exp2
++  exp == null ? LiteralExp : exp.exp2
+
+AST Diff###:
+---------INS ConditionalExpression
+------------INS InfixExpression
+---------------INS Variable
+---------------INS Operator
+---------------INS NullLiteral
+------------INS NumberLiteral
+------------INS Expression
+---------DEL Expression

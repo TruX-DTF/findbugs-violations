@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :BIT_SIGNED_CHECK
+
+- (exp1 & exp2) > 0;
++ (exp1 & exp2) == exp;
+
+AST Diff###:
+---UPD InfixExpression
+------INS Variable
+------UPD Operator
+------DEL NumberLiteral
+
+
+

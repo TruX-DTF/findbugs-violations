@@ -1,0 +1,22 @@
+PATCH###
+Alarm Type :BC_VACUOUS_INSTANCEOF
+
+- if ( exp instanceof String ) {
++ if ( exp != null) {
+                     
+AST Diff###:
+UPD IfStatement
+---DEL InstanceofExpression
+------DEL Expression
+------DEL Instanceof
+------DEL SimpleType
+---INS InfixExpression
+------MOV Expression
+------INS Operator
+------INS NullLiteral
+
+
+
+
+
+

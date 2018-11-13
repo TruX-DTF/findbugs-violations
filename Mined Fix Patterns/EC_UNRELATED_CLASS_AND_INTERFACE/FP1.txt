@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :EC_UNRELATED_CLASS_AND_INTERFACE
+
+
+-            if (exp1.equals(exp2)) {
++            if (exp1.subExp.equals(exp2)) {
+        
+
+AST Diff###:
+UPD IfStatement
+---UPD MethodInvocation
+------UPD MethodName
+---------INS Expression

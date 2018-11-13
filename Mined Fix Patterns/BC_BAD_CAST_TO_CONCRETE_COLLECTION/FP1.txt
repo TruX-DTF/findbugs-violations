@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :BC_BAD_CAST_TO_CONCRETE_COLLECTION
+
+-  (T) V
++  V
+
+AST Diff###:
+------INS Variable
+------DEL CastExpression
+---------DEL SimpleType
+---------DEL Variable
+
+
+

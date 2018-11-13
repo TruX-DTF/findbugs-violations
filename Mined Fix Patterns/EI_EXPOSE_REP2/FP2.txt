@@ -1,0 +1,19 @@
+PATCH###
+Alarm Type :EI_EXPOSE_REP2
+
+-            this.var = var;
++            this.var1 = var != null ? exp : null;
+
+AST Diff###:
+UPD ExpressionStatement
+---UPD Assignment
+------UPD FieldAccess
+---------UPD Variable
+------DEL Variable
+------INS ConditionalExpression
+---------INS InfixExpression
+------------INS Variable
+------------INS Operator
+------------INS NullLiteral
+---------INS Expression
+---------INS NullLiteral

@@ -1,0 +1,9 @@
+PATCH###
+Alarm Type :NM_CLASS_NOT_EXCEPTION
+
+-public class ClassNameException {
++public class ClassNameException extends SuperException {
+
+AST Diff###:
+UPD TypeDeclaration
+---INS SimpleType

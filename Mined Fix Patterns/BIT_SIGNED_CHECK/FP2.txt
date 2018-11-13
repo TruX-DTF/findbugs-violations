@@ -1,0 +1,20 @@
+PATCH###
+Alarm Type :BIT_SIGNED_CHECK
+
+- if((exp1 & exp2) > 0){
+
+AST Diff###:
+DEL IfStatement
+---DEL InfixExpression
+------DEL ParenthesizedExpression
+---------DEL InfixExpression
+------------DEL Expression
+------------DEL Operator
+------------DEL Expression
+------DEL Operator
+------DEL NumberLiteral
+
+
+
+
+

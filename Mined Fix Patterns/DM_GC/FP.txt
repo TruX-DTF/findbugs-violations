@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :DM_GC
+
+-			System.gc();
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL MethodInvocation
+------DEL Name
+------DEL MethodName

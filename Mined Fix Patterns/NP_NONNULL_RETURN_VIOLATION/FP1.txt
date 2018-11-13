@@ -1,0 +1,8 @@
+PATCH###
+Alarm Type :NP_NONNULL_RETURN_VIOLATION
+
+-  return null;
+
+AST Diff###:
+DEL ReturnStatement
+---DEL NullLiteral

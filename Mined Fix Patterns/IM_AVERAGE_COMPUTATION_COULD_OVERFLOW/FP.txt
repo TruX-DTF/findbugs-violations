@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :IM_AVERAGE_COMPUTATION_COULD_OVERFLOW
+
+- numExp / 2;
++ numExp >>> 1;
+
+AST Diff###:
+------UPD InfixExpression
+---------UPD Operator
+---------UPD NumberLiteral

@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :SA_LOCAL_SELF_COMPARISON
+
+-    if (vars.contains(vars))
++    if (vars.contains(var))
+
+AST Diff###:
+---UPD MethodInvocation
+------UPD MethodName
+---------UPD Variable

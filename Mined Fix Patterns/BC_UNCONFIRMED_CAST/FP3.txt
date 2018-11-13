@@ -1,0 +1,33 @@
+
+
+PATCH###
+Alarm Type :BC_UNCONFIRMED_CAST
+
+-        if (exp || !((T) v).exp2()) {
++        if (exp || !(v instanceof T) || !((T) v). exp2()) {
+
+AST Diff###:
+UPD IfStatement
+---UPD InfixExpression
+------INS PrefixExpression
+---------INS Operator
+---------INS ParenthesizedExpression
+------------INS InstanceofExpression
+---------------INS Variable
+---------------INS Instanceof
+---------------INS SimpleType
+---UPD IfStatement
+------UPD InfixExpression
+---------DEL ParenthesizedExpression
+------------DEL InfixExpression
+---------------DEL InstanceofExpression
+------------------DEL Variable
+------------------DEL Instanceof
+------------------DEL SimpleType
+---------------DEL Operator
+---------MOV MethodInvocation
+
+
+
+
+

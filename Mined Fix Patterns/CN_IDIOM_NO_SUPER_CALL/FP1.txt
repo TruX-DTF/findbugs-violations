@@ -1,0 +1,28 @@
+
+PATCH###
+Alarm Type :CN_IDIOM_NO_SUPER_CALL
+
+-  new T(args);
++  T v = (T)super.clone();
+
+AST Diff###:
+DEL Statement
+---DEL ClassInstanceCreation
+------DEL New
+------DEL SimpleType
+------DEL ArgsExps
+INS VariableDeclarationStatement
+---INS SimpleType
+---INS VariableDeclarationFragment
+------INS Variable
+------INS CastExpression
+---------INS SimpleType
+---------INS SuperMethodInvocation
+------------INS MethodName
+
+
+
+
+
+
+

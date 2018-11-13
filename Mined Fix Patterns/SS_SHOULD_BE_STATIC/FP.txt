@@ -1,0 +1,9 @@
+PATCH###
+Alarm Type :SS_SHOULD_BE_STATIC
+
+-    private final T v = exp;
++    private static final T v = exp;
+
+AST Diff###:
+UPD FieldDeclaration
+---INS Modifier@static

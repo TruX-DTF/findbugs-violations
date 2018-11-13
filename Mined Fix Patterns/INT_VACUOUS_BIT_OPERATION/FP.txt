@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :INT_VACUOUS_BIT_OPERATION
+
+-  var & 0xffffffff;
++  var
+
+AST Diff###:
+------DEL InfixExpression
+---------DEL Variable
+---------DEL Operator
+---------DEL NumberLiteral
+------INS Variable
+
+
+

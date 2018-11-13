@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :URF_UNREAD_FIELD
+
+-  this.var = var;
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL Assignment
+------DEL FieldAccess
+---------DEL ThisExpression
+---------DEL Variable
+------DEL Operator

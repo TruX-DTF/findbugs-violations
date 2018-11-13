@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :PZLA_PREFER_ZERO_LENGTH_ARRAYS
+
+- return null;
++ return new T[0];
+
+AST Diff###:
+UPD ReturnStatement
+---DEL NullLiteral
+---INS ArrayCreation
+------INS ArrayType
+---------INS SimpleType
+------INS NumberLiteral

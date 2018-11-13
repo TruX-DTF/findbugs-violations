@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :DM_STRING_TOSTRING
+
+- strExp.toString()
++ strExp
+
+AST Diff###:
+---DEL MethodInvocation
+------DEL Variable
+------DEL MethodName
+---MOV Expression@strExp

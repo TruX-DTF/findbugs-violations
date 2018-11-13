@@ -1,0 +1,23 @@
+PATCH###
+Alarm Type :FE_FLOATING_POINT_EQUALITY
+
+
+- if (var1 != var2) {
++ if (Math.abs(var1 - var2) < 0.00001) {
+ 				
+
+AST Diff###:
+UPD IfStatement
+---DEL InfixExpression
+---INS InfixExpression
+------INS MethodInvocation
+---------INS Name
+---------INS MethodName
+------------INS InfixExpression
+---------------MOV Variable
+---------------MOV Operator
+---------------MOV Variable
+------INS Operator
+------INS NumberLiteral
+
+

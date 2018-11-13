@@ -1,0 +1,20 @@
+
+PATCH###
+Alarm Type :BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY
+
+-   (T[]) list.toArray();
++   (T[]) list.toArray(new T[list.size()]);
+
+AST Diff###:
+---UPD CastExpression
+------INS MethodInvocation
+---------INS Variable
+---------INS MethodName
+------------INS ArrayCreation
+---------------INS ArrayType
+------------------INS SimpleType
+---------------INS MethodInvocation
+------------------MOV Variable
+------------------MOV MethodName
+------DEL MethodInvocation
+

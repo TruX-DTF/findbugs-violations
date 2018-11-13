@@ -1,0 +1,8 @@
+PATCH###
+Alarm Type :PZLA_PREFER_ZERO_LENGTH_ARRAYS
+
+-        return null;
+
+AST Diff###:
+DEL ReturnStatement
+---DEL NullLiteral

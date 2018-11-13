@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :RE_CANT_USE_FILE_SEPARATOR_AS_REGULAR_EXPRESSION
+
+
+-   File.separator
++   "\\" + File.separator
+
+AST Diff###:
+------------INS InfixExpression
+---------------INS StringLiteral
+---------------INS Operator
+---------------INS QualifiedName
+------------------MOV Variable
+------------------MOV Variable
+------------DEL QualifiedName

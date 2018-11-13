@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :RpC_REPEATED_CONDITIONAL_TEST
+
+-  if (exp1 || exp2) {
++  if (exp2) {
+
+AST Diff###:
+UPD IfStatement
+---DEL InfixExpression
+------DEL Expression
+------DEL Operator
+------DEL Expression
+---INS Expression

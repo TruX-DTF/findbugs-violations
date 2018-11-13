@@ -1,0 +1,8 @@
+PATCH###
+Alarm Type :RE_POSSIBLE_UNINTENDED_PATTERN
+
+- “.”  or |
++ "\\."
+
+AST Diff###:
+---UPD StringLiteral

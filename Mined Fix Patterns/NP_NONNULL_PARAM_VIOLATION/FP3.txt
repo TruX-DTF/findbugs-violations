@@ -1,0 +1,9 @@
+PATCH###
+Alarm Type :NP_NONNULL_PARAM_VIOLATION
+
+
+-        this(null);
+
+AST Diff###:
+DEL ConstructorInvocation
+---DEL NullLiteral

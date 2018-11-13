@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE
+
+-  var != null ? var.method() : null;
++  var.method()
+
+AST Diff###:
+------DEL ConditionalExpression
+---------DEL InfixExpression
+------------DEL Variable
+------------DEL Operator
+------------DEL NullLiteral
+---------DEL Expression
+---------DEL NullLiteral
+------INS Expression

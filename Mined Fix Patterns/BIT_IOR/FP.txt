@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :BIT_IOR
+
+
+-  exp1 | exp2;
++  exp1 & exp2;
+
+AST Diff###:
+---------UPD InfixExpression
+------------UPD Operator@from “|” to “&”
+
+

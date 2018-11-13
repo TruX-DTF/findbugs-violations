@@ -1,0 +1,19 @@
+PATCH###
+Alarm Type :FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER
+
+-   d != Double.NaN
++   !Double.isNaN(d)
+
+AST Diff###:
+---------DEL InfixExpression
+------------DEL Variable
+------------DEL Operator
+------------DEL QualifiedName
+---------------DEL Variable
+---------------DEL Variable
+---------INS PrefixExpression
+------------INS Operator
+------------INS MethodInvocation
+---------------INS Name
+---------------INS MethodName
+------------------INS Variable

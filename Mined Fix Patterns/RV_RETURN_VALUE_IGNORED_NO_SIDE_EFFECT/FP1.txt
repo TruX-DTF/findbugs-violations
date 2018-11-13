@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT
+
+- var.method(args);
++ T t_ = var.method(args);
+
+AST Diff###:
+INS VariableDeclarationStatement
+---INS SimpleType
+---INS VariableDeclarationFragment
+------INS Variable
+------MOV MethodInvocation
+DEL ExpressionStatement

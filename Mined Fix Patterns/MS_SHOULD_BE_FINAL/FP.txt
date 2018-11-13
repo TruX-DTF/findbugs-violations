@@ -1,0 +1,9 @@
+PATCH###
+Alarm Type :MS_SHOULD_BE_FINAL
+
+-    protected static T var = exp;
++    protected static final T var = exp;
+
+AST Diff###:
+UPD FieldDeclaration
+---INS Modifier

@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :SE_NO_SERIALVERSIONID
+
++    private static final long serialVersionUID = NumberL;
+     
+AST Diff###:
+INS FieldDeclaration
+---INS Modifier
+---INS Modifier
+---INS Modifier
+---INS PrimitiveType
+---INS VariableDeclarationFragment
+------INS Variable
+------INS NumberLiteral

@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :EC_NULL_ARG
+
+-      if (var1.equals(var2)) {
+### var2’s value is null.
+
+AST Diff###:
+DEL IfStatement
+------DEL MethodInvocation
+---------DEL Variable
+---------DEL MethodName
+------------DEL Variable
+
+
+

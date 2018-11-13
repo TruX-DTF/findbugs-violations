@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :DL_SYNCHRONIZATION_ON_SHARED_CONSTANT
+
+- synchronized(exp) {
+
+AST Diff###:
+DEL SynchronizedStatement
+
+
+
+

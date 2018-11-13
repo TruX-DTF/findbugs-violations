@@ -1,0 +1,17 @@
+PATCH###
+Alarm Type :SIO_SUPERFLUOUS_INSTANCEOF
+
+-		if (v instanceof T) {
+-			T var = (T)v;
++		T var = v;
+
+AST Diff###:
+INS VariableDeclarationStatement
+---MOV SimpleType
+---MOV VariableDeclarationFragment
+DEL IfStatement
+---DEL InstanceofExpression
+------DEL Variable
+------DEL Instanceof
+------DEL SimpleType
+---DEL VariableDeclarationStatement

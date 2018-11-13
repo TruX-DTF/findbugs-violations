@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT
+
+-   toString().equals(obj.toString());
++   obj instanceof T && toString().equals(obj.toString());
+
+AST Diff###:
+UPD ReturnStatement
+---INS InfixExpression
+------INS InstanceofExpression
+---------INS Variable
+---------INS Instanceof
+---------INS SimpleType
+------MOV MethodInvocation
+------INS Operator

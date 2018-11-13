@@ -2,12 +2,10 @@ package edu.lu.uni.serval.diffentry;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
-
-import edu.lu.uni.serval.utils.FileHelper;
 
 public class DiffEntryReader {
 	
@@ -19,10 +17,9 @@ public class DiffEntryReader {
 	 */
 	public List<DiffEntryHunk> readHunks(File diffentryFile) {
 		List<DiffEntryHunk> diffentryHunks = new ArrayList<>();
-		String content = FileHelper.readFile(diffentryFile);
 		BufferedReader reader = null;
 		try {
-			reader = new BufferedReader(new StringReader(content));
+			reader = new BufferedReader(new FileReader(diffentryFile));
 			String line = null;
 			int startLine = 0;
 			int range = 0;
@@ -93,10 +90,9 @@ public class DiffEntryReader {
 	 */
 	public List<DiffEntryHunk> readHunks2(File diffentryFile) {
 		List<DiffEntryHunk> diffentryHunks = new ArrayList<>();
-		String content = FileHelper.readFile(diffentryFile);
 		BufferedReader reader = null;
 		try {
-			reader = new BufferedReader(new StringReader(content));
+			reader = new BufferedReader(new FileReader(diffentryFile));
 			String line = null;
 			int startLine = 0;
 			int range = 0;
@@ -167,10 +163,9 @@ public class DiffEntryReader {
 	 */
 	public List<DiffEntryHunk> readHunks3(File diffentryFile) {
 		List<DiffEntryHunk> diffentryHunks = new ArrayList<>();
-		String content = FileHelper.readFile(diffentryFile);
 		BufferedReader reader = null;
 		try {
-			reader = new BufferedReader(new StringReader(content));
+			reader = new BufferedReader(new FileReader(diffentryFile));
 			String line = null;
 			int buggyStartLine = 0;
 			int buggyRange = 0;

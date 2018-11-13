@@ -1,0 +1,9 @@
+PATCH###
+Alarm Type :NS_DANGEROUS_NON_SHORT_CIRCUIT
+
+-   leftExp  &/| rightExp
++   leftExp &&/|| rightExp 
+
+AST Diff###:
+---UPD InfixExpression
+------UPD Operator

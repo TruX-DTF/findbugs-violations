@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :DB_DUPLICATE_BRANCHES
+
+  if (exp) {
+    …
+- } else if (exp) {
+-   …
+  } else {
+  }
+
+AST Diff###:
+DEL IfStatement
+
+
+

@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :DLS_DEAD_LOCAL_STORE_OF_NULL
+
+- var = null;
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL Assignment
+------DEL Variable
+------DEL Operator
+------DEL NullLiteral

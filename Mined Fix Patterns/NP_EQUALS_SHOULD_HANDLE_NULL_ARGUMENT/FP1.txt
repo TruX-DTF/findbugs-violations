@@ -1,0 +1,23 @@
+PATCH###
+Alarm Type :NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT
+
+-  other.getClass() == getClass() && equals((SessionID) other);
++  this == other || other != null && other.getClass() == getClass() && equals((SessionID) other);
+
+AST Diff###:
+---INS InfixExpression
+------INS InfixExpression
+---------INS ThisExpression
+---------INS Operator
+---------INS Variable
+------MOV InfixExpression
+------INS Operator
+---UPD InfixExpression
+------INS InfixExpression
+---------MOV InfixExpression
+---------INS InfixExpression
+------------INS Variable
+------------INS Operator
+------------INS NullLiteral
+---------MOV Operator
+------INS Operator

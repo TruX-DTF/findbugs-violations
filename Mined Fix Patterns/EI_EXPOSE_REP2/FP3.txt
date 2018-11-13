@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :EI_EXPOSE_REP2
+
+-        this.v1 = v1;
++        this.v2 = v2;
+
+AST Diff###:
+UPD ExpressionStatement
+---UPD Assignment
+------UPD FieldAccess
+---------UPD Variable
+------UPD Variable

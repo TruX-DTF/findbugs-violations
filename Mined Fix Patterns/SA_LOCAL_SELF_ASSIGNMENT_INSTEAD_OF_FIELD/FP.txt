@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD
+
+-  v = v;
++  this.v = v;
+
+AST Diff###:
+UPD ExpressionStatement
+---UPD Assignment
+------INS FieldAccess
+---------INS ThisExpression
+---------INS Variable
+------DEL Variable

@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :DMI_COLLECTIONS_SHOULD_NOT_CONTAIN_THEMSELVES
+
+- collectionVar.contains(collectionVar)
++ collectionVar.contains(var)
+       
+AST Diff###:
+---UPD MethodInvocation
+------UPD MethodName
+---------UPD Variable
+
+
+

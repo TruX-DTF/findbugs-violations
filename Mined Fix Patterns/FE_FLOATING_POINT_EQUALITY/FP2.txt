@@ -1,0 +1,18 @@
+PATCH###
+Alarm Type :FE_FLOATING_POINT_EQUALITY
+
+-        if (var1 == var2)
++        if (var1.compareTo(var2) == 0)
+
+AST Diff###:
+UPD IfStatement
+------UPD InfixExpression
+---------INS MethodInvocation
+------------INS Variable
+------------INS MethodName
+---------------INS Variable
+---------INS NumberLiteral
+---------DEL Variable
+---------DEL Variable
+
+

@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :SA_LOCAL_SELF_COMPARISON
+
+-    var.equals(var);
++    var.equals(this.var);
+
+AST Diff###:
+------UPD MethodInvocation
+---------UPD MethodName
+------------INS FieldAccess
+---------------INS ThisExpression
+---------------INS Variable
+------------DEL Variable
+
+

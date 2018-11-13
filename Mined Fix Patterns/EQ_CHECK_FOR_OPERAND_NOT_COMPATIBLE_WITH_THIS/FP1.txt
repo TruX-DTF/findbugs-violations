@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS
+
+-     o instanceof T1
++     o instanceof T2
+ 
+AST Diff###:
+------------UPD InstanceofExpression
+---------------UPD Type
+
+
+

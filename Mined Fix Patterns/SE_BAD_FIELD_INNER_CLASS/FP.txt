@@ -1,0 +1,10 @@
+PATCH###
+Alarm Type :SE_BAD_FIELD_INNER_CLASS
+
+ 	@SuppressWarnings("serial")
+-	private class ClassName {
++	private static class ClassName {
+
+AST Diff###:
+UPD TypeDeclaration
+---INS Modifier@Static

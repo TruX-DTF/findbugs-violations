@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :UC_USELESS_OBJECT
+
+- T v = new T(args);
+
+AST Diff###:
+DEL VariableDeclarationStatement
+---DEL SimpleType
+---DEL VariableDeclarationFragment
+------DEL Variable
+------DEL ClassInstanceCreation
+---------DEL New
+---------DEL SimpleType
+---------DEL Expressions@Arguments

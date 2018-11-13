@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :NP_NONNULL_RETURN_VIOLATION
+
+-        return null;
++        return new T(args);
+
+AST Diff###:
+UPD ReturnStatement
+---INS ClassInstanceCreation
+------INS New
+------INS SimpleType
+------INS Variable
+---DEL NullLiteral

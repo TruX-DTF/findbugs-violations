@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false">
-	<property name="APP_NAME" value="Fix.Pattern.Miner"></property>
+	<property name="APP_NAME" value="Patch_Parser"></property>
 	<contextName>${APP_NAME}</contextName>
 
     <property name="LOG_HOME" value="logs" />  

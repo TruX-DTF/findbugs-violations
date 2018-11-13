@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD
+
+-  public static T var = exp;
+
+AST Diff###:
+DEL FieldDeclaration
+---DEL Modifier
+---DEL Modifier
+---DEL PrimitiveType
+---DEL VariableDeclarationFragment
+------DEL Variable
+------DEL Expression

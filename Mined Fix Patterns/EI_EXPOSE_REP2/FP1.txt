@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :EI_EXPOSE_REP2
+
+
+-   this.var = var;
+
+AST Diff###:
+DEL ExpressionStatement
+---DEL Assignment
+------DEL FieldAccess
+---------DEL ThisExpression
+---------DEL Variable
+------DEL Operator
+------DEL Variable

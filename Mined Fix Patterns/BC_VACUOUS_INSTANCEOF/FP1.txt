@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :BC_VACUOUS_INSTANCEOF
+
+- if (v instanceof T) {
+     ……
+- }
+
+AST Diff###:
+DEL Statement
+---DEL InstanceofExpression
+------DEL Variable
+------DEL Instanceof
+------DEL SimpleType

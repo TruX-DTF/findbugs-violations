@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :RV_RETURN_VALUE_IGNORED
+
+-  var.method();
++  var = var.method();
+
+AST Diff###:
+UPD ExpressionStatement
+---INS Assignment
+------INS Variable
+------INS Operator
+------INS MethodInvocation
+---------MOV Variable
+---------MOV MethodName
+---DEL MethodInvocation

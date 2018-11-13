@@ -1,0 +1,11 @@
+PATCH###
+Alarm Type :RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE
+
+
+-        if (var1 != null) {
++        if (var2 != null) {
+
+AST Diff###:
+UPD IfStatement
+---UPD InfixExpression
+------UPD Variable

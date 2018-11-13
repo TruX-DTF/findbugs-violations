@@ -1,0 +1,17 @@
+PATCH###
+Alarm Type :ICAST_IDIV_CAST_TO_DOUBLE
+
+- intVarExp / 10;
++ intVarExp / 10d(or f);
+
+AST Diff###:
+UPD ReturnStatement
+---UPD InfixExpression
+------UPD NumberLiteral
+
+
+
+
+
+
+

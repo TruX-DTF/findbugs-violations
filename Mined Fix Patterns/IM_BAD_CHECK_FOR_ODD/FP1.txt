@@ -1,0 +1,13 @@
+PATCH###
+Alarm Type :IM_BAD_CHECK_FOR_ODD
+
+
+- (length % 2) == 1
++ (length & 1) == 1
+
+AST Diff###:
+---UPD InfixExpression
+------UPD ParenthesizedExpression
+---------UPD InfixExpression
+------------UPD Operator
+------------UPD NumberLiteral

@@ -1,0 +1,12 @@
+PATCH###
+Alarm Type :FE_FLOATING_POINT_EQUALITY
+
+
+-    if (v1 != v2) {
+
+AST Diff###:
+DEL IfStatement
+---DEL InfixExpression
+------DEL Variable
+------DEL Operator
+------DEL Variable

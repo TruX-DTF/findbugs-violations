@@ -1,0 +1,14 @@
+PATCH###
+Alarm Type :RV_EXCEPTION_NOT_THROWN
+
+-     new ExceptionClassName(…);
++     throw new ExceptionClassName(…);
+
+AST Diff###:
+INS ThrowStatement
+---INS ClassInstanceCreation
+------MOV New
+------MOV SimpleType
+------MOV Expression
+DEL ExpressionStatement
+---DEL ClassInstanceCreation

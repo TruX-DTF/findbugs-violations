@@ -1,0 +1,19 @@
+PATCH###
+Alarm Type :DM_BOXED_PRIMITIVE_FOR_COMPARE
+
+- ((PrimitiveType) exp1).compareTo(exp2);
++ PrimitiveType.compare(exp1, exp2);
+
+AST Diff###:
+---UPD MethodInvocation
+------DEL ParenthesizedExpression
+---------DEL CastExpression
+------------DEL SimpleType
+------------DEL MethodInvocation
+---------------DEL ThisExpression
+------MOV PrimitiveType
+------UPD MethodName
+---------INS MethodInvocation
+
+
+

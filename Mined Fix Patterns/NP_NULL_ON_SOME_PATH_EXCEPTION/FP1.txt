@@ -1,0 +1,15 @@
+PATCH###
+Alarm Type :NP_NULL_ON_SOME_PATH_EXCEPTION
+
+-  input/outputSteam.close();
++  if (input/outputSteam != null) {
++	input/outputSteam.close();
++  }
+
+AST Diff###:
+INS IfStatement
+---MOV ExpressionStatement
+---INS InfixExpression
+------INS Variable
+------INS Operator
+------INS NullLiteral

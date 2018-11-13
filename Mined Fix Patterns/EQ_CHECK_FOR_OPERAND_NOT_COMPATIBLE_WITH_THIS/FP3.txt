@@ -1,0 +1,12 @@
+
+PATCH###
+Alarm Type :EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS
+
+-   (T1)v
++   (T2)v
+
+AST Diff###:
+------------UPD CastExpression
+---------------UPD SimpleType
+
+
