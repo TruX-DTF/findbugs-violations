@@ -1,8 +1,8 @@
 PATCH###
 Alarm Type :ICAST_IDIV_CAST_TO_DOUBLE
 
--    divisor / dividend;
-+    divisor / (float or double) dividend;
+-    dividend / divisor;
++    dividend / (float or double) divisor;
 
 AST Diff###:
 ------UPD InfixExpression

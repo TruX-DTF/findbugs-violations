@@ -2,7 +2,7 @@ PATCH###
 Alarm Type :BIT_SIGNED_CHECK
 
 - (exp1 & exp2) > 0;
-+ (exp1 & exp2) == exp;
++ (exp1 & exp2) == exp2;
 
 AST Diff###:
 ---UPD InfixExpression
