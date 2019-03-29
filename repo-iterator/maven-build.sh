@@ -1,0 +1,1 @@
+mvn exec:java -Dexec.mainClass="edu.lu.uni.serval.buildtool.maven.MavenBuildCommand" -Dexec.args="$*"

@@ -3,3 +3,6 @@
 target/
 .classpath
 .settings
+.cache-main
+.cache-tests
+tmp/
